@@ -28,7 +28,7 @@ $primary: $red;
 
 $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);
-$color-btn-text: $white;
+$color-btn-text: $red;
 
 // Options
 //
@@ -57,7 +57,7 @@ $navbar-light-toggler-icon-bg: none;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-// $enable-responsive-font-sizes: true;
+$enable-responsive-font-sizes: true;
 
 // Body
 //
@@ -173,7 +173,7 @@ $dropdown-config: (
   border-radius: 4,
   border-width: 1,
   border-color: $gray-200,
-  box-shadow: normal,
+  box-shadow: none,
   branding-position: bottom,
   spacing: normal,
   include-desc: yes,
@@ -184,7 +184,7 @@ $dropdown-config: (
   subtitle-color: $black,
   text-color: $black,
   highlight-color: $red,
-  highlight-opacity: 1,
+  highlight-opacity: 0.1,
   highlight-type: underline
 );
 

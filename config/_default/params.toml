@@ -21,8 +21,8 @@ titleHome = "DFT-CES"
 #twitterCreator = "@henkverlinde"
 
 ## JSON-LD
-# schemaType = "Person"
-schemaType = "Organization"
+schemaType = "Person"
+#schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
 schemaAuthorTwitter = "https://twitter.com/henkverlinde"
@@ -67,14 +67,14 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-#footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2023- M-design Lab."
+copyright = "Copyright © 2023 M-design — All right Reserved."
 
 # Alert
 alert = true
-alertDismissable = false
+alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
 alertText = "New generation of our DFT-CES method has been released! <a class=\"alert-link stretched-link\" href=\"https://github.com/dft-ces/dft-ces2/\">Check it out</a>"
 

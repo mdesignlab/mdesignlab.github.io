@@ -13,6 +13,8 @@
 /** Import KaTeX */
 @import "katex/dist/katex";
 
+// @import "@docsearch/css/dist/style";
+
 /** Import theme styles */
 @import "common/global";
 @import "common/dark";
@@ -46,6 +48,16 @@ footer {
   color: $red !important;
 }
 
+body .btn-primary {
+  color: $white;
+}
+
+body .btn-primary:hover,
+body .btn-primary:focus {
+  text-decoration: none;
+  color: $white;
+}
+
 body.home .navbar-brand {
-  display: none;
+  display: none; // hide on home page
 }
