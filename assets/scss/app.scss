@@ -59,6 +59,6 @@ body .btn-primary:focus {
   color: $white;
 }
 
-.about-us .navbar-brand {
+body.about-us .navbar-brand {
   display: none; // hide on home page
 }
