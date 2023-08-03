@@ -49,10 +49,6 @@ footer {
   color: $red !important;
 }
 
-.about-us .navbar-brand {
-  display: none; // hide on home page
-}
-
 body .btn-primary {
   color: $white;
 }
@@ -61,4 +57,8 @@ body .btn-primary:hover,
 body .btn-primary:focus {
   text-decoration: none;
   color: $white;
+}
+
+.about-us .navbar-brand {
+  display: none; // hide on home page
 }
