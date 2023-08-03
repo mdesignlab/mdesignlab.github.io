@@ -13,9 +13,7 @@ menu:
 weight: 110
 toc: true
 ---
-
+<h2>
 ## Get started
-
+</h2>
 There are two main ways to get started with DFT-CES:
-
-## 

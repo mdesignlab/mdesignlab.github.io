@@ -17,9 +17,11 @@ toc: true
 
 <div class="callout callout-info">
 A mean-field QM/MM method, DFT-CES which stands for the <strong> density functional theory in classical explicit solvents.</strong>
-</div> 
+</div>
 
-## What is DFT-CES for?
+<h2>
+What is DFT-CES for?
+</h2>
 Describing solvation effects on electronic structures of condensed-phase systems and catalytic systems have been recently studied by a variety of methods such as density functional theory (DFT) calculations coupled with implicit solvation models. However, the specific configuration or stabilization of reactant in solvated system has been reported, and this can be a kinetically significant influence.
 
 Then, how can explicit solvents be considered without much increase in computational cost? What can you see from the result?
@@ -36,8 +38,9 @@ Starting from the installation of open-source programs and relevant libraries, i
 
 [Install]({{< relref "installation" >}}) --- How to install and couple two different methods for DFT-CES.
 
-
+<h2>
 ## How to use for various systems
+</h2>
 
 [Small Molecule in Water]({{< relref "homogeneous" >}}) --- How to construct a homogeneous system for DFT-CES.
 [Heterogeneous Catalyst]({{< relref "heterogeneous" >}}) --- Move onto a heterogeneous system.

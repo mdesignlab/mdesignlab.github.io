@@ -13,10 +13,13 @@ weight: 110
 toc: true
 ---
 
+<h1>
 # Small Molecule in Water
+</h1>
+
 <div class="callout callout-info">
 Example, a homogenous aqueous system
-</div> 
+</div>
 
 <br>
 
@@ -24,21 +27,22 @@ Example, a homogenous aqueous system
 
 One of the small molcules in the SAMPL0 set will be tested here to get started with DFT-CES.
 
-## Get Started
+<h2>
+Get Started
+</h2>
 A system consists of one benzyl bromide molecule and 1000 water molecules. The benzyl bromide will be treated at quantum mechanics (QM) level, while the water molecules will be treated at the molecular mechanics (MM) level, described by the [TIP4P](https://doi.org/10.1063/1.1683075) model.
 
 {{< alert icon="👉" text="Check out the details of TIP4P water model." />}}
 
-
-### Construction of Systems
+<h3>
+Construction of Systems
+</h3>
 
 {{< alert icon="💡" text="The information for QM/MM coupling is mediated by the real-space grid." />}}
 
 It is important to note that in our real-space grid-based approach, the exchange of inforamtion about interactions across the systems occurs through the grid. Therefore, it is necessary to first construct the grid.
 
-
 The grid will cover the whole QM/MM system, and its grid size is determined based on the QM system, taking into account the desired level of accuracy. Considering the memory allocation requirements, it is generally recommended to have a grid size of around 0.15 angstrom along x-, y-, and z-coordinate. When performing DFT calculations, the default number of grid points (nr1, nr2, nr3) is typically sufficient, based on the [ecutrho](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm313/) criterion.
-
 
 In a homogeneous system, it is important to consider the potential overlap between the QM and MM regions and the possibility of change in the density afterwards. Taking these factors into account, you can utilize the OPLS force field to predict the density and adjust the grid size accordingly.
 
@@ -59,15 +63,15 @@ By following these steps, you can construct a QM/MM system for a homogeneous sys
 {{< alert icon="💡" text="Here, the OPLS force field is used to predict the density at a glance. You can use some other force fields and then modify later on according to the result of QM/MM." />}}
 
 {{< details "How to partition the system?" >}}
-In DFT-CES, each region of the QM/MM system is not spatially partitioned. Instead, when it is necessary to analyze the electronic structure or when bond interactions are of primary importance, specific atoms are designated for QM calculations, while the remaining atoms are treated under the molecular mechanics (MM) representation. 
+In DFT-CES, each region of the QM/MM system is not spatially partitioned. Instead, when it is necessary to analyze the electronic structure or when bond interactions are of primary importance, specific atoms are designated for QM calculations, while the remaining atoms are treated under the molecular mechanics (MM) representation.
 {{< /details >}}
 
+<h2>
 ## Go Further
-
+</h2>
 ### Generation of Cube Files
 
-Extract the information for coupling the QM/MM systems. First of all, obtain the cube file of electrostatic potential with 6 float numbers in a row. 
-
+Extract the information for coupling the QM/MM systems. First of all, obtain the cube file of electrostatic potential with 6 float numbers in a row.
 
 The `plot_num = 11` will give you the bare potential and hartree potential as described in [pp.x](https://www.quantum-espresso.org/Doc/INPUT_PP.html) of Quantum ESPRESSO. And, plot another cube with `plot_num = 0` for the valence charge density. These cube files encompassing the QM system store the information for QM/MM simulations in DFT-CES (DFT-CES2 with charge density).
 
@@ -77,17 +81,21 @@ A gaussian convoluted density will be used to interpret the Pauli repulsion inte
 
 ### Preparation for the Run
 
-When you have all systems, and cube files intensionally modified, generally you can run the DFT-CES with the provided executable bash script, but you can do manually. 
+When you have all systems, and cube files intensionally modified, generally you can run the DFT-CES with the provided executable bash script, but you can do manually.
 
 An executable for the same job but works with only one handy input will be soon released.
+<h2>
 ## Run
+</h2>
 
 ```bash
 ./qmmm.sh -c or --configuration
 ./qmmm.sh 
 ```
 
+<h2>
 ## Analysis
+</h2>
 
 <!-- ## Get started
 
