@@ -29,6 +29,7 @@
 @import "components/mermaid";
 @import "components/search";
 @import "components/tables";
+@import "components/callout";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/pages";
@@ -58,6 +59,6 @@ body .btn-primary:focus {
   color: $white;
 }
 
-body.home .navbar-brand {
+.about-us .navbar-brand {
   display: none; // hide on home page
 }

@@ -8,14 +8,17 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 110
+    parent: "first-step"
+weight: 120
 toc: true
 ---
 
 ## Requirements
 
-- [Git](https://git-scm.com/) — latest source release
+- [LAMMPS](https://www.lammps.org/download.html) - ver 2017
+- [Quantum ESPRESSO](https://www.quantum-espresso.org/) - ver 6.3
+
+<!-- - [Git](https://git-scm.com/) — latest source release
 - [Node.js](https://nodejs.org/) — latest LTS version or newer
 
 {{< details "Why Node.js?" >}}
@@ -76,4 +79,4 @@ Doks will start the Hugo development webserver accessible by default at `http://
 
 ## Other commands
 
-Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}})
+Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}}) -->

@@ -1,4 +1,4 @@
-baseurl = "https://mdesignlab.github.io/"
+baseurl = "https://dft-ces.github.io/"
 canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true

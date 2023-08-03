@@ -8,22 +8,28 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 130
+    parent: "first-step"
+weight: 140
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+<!-- {{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}} -->
 
-## create
+## Analyze
 
-Create new content for your site:
+Analyze the data after QM
 
 ```bash
-npm run create [path] [flags]
+./qmmm.sh -instant_qm 
 ```
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
+Analyze the data after QM
+
+```bash
+./qmmm.sh -instant_mm [lammps.output]
+```
+
+<!-- See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
 
 ### Docs based tree
 
@@ -109,4 +115,4 @@ Build production website including draft and future content:
 
 ```bash
 npm run build:preview
-```
+``` -->

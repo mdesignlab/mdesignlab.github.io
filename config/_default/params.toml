@@ -10,8 +10,8 @@ description = "which stands for Density Functional Theory in Classical Explicit 
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["library_img_libraries.jpg"]
-#images = ["m_design_logo.png"]
+#images = ["library_img_libraries.jpg"]
+images = ["m_design_logo.png"]
 ogLocale = "en_US"
 domainTLD = "mdesignlab.github.io"
 titleHome = "DFT-CES"
@@ -21,16 +21,16 @@ titleHome = "DFT-CES"
 #twitterCreator = "@henkverlinde"
 
 ## JSON-LD
-schemaType = "Person"
-#schemaType = "Organization"
+#schemaType = "Person"
+schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
 schemaAuthorTwitter = "https://twitter.com/henkverlinde"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorGitHub = "https://github.com/dft-ces"
 schemaLocale = "en-US"
-schemaLogo = "library_img_libraries.jpg"
-#schemaLogo = "m_design_logo.png"
+#schemaLogo = "library_img_libraries.jpg"
+schemaLogo = "m_design_logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
 schemaImage = "doks.png"
@@ -38,11 +38,11 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 #schemaTwitter = "https://twitter.com/getdoks"
 #schemaLinkedIn = ""
-schemaGitHub = "https://github.com/mdesignlab/mdesignlab.github.io"
+schemaGitHub = "https://github.com/dft-ces/dft-ces2"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
-siteLinksSearchBox = false
+siteLinksSearchBox = true
 
 ## Chrome Browser
 themeColor = "#fff"
@@ -53,7 +53,7 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
-smallLimit = "300"
+smallLimit = "360"
 
 # Images
 imageResponsive = true
@@ -67,10 +67,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+# footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a> and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyright = "Copyright © 2023 M-design — All right Reserved."
+copyright = "Copyright © 2023. M-design Lab. All right reserved."
 
 # Alert
 alert = true
@@ -96,19 +96,19 @@ alertText = "New generation of our DFT-CES method has been released! <a class=\"
   clipBoard = true
   instantPage = true
   flexSearch = true
-  searchSectionsShow = []
+  searchSectionsShow = ["docs"]
   searchSectionsIndex = []
   darkMode = true
   bootStrapJs = true
   breadCrumb = false
   highLight = true
-  kaTex = false
+  kaTex = true
   multilingualMode = false
   docsVersioning = false
   fullWidth = false
   navbarSticky = true
   toTopButton = true
-  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
+  scrollSpy = true # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]

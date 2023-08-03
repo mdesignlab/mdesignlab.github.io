@@ -1,19 +1,20 @@
 ---
-title: "Introduction"
+title: "Slab System"
 description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
 lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+date: 2022-10-06T08:48:57+00:00
+lastmod: 2022-10-06T08:48:57+00:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 100
+    parent: "first-step"
+weight: 120
 toc: true
 ---
+## on the progress
 
-## Get started
+<!-- ## Get started
 
 There are two main ways to get started with Doks:
 
@@ -55,4 +56,4 @@ Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Get help on Doks. [Help →]({{< relref "how-to-update" >}}) -->

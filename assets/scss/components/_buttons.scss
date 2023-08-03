@@ -71,19 +71,19 @@ pre {
   font-family: $font-family-th-serif;
   font-size: $font-size-sm;
   padding: 0.25rem 0.5rem;
-  color: $color-btn-text;
-  background-color: $color-btn-bg;
-  border-color: $color-btn-border;
+  color: $color-btn-copy-text;
+  background-color: $color-btn-copy-bg;
+  border-color: $color-btn-copy-border;
 }
 
 .btn-copy:hover {
-  color: $color-btn-text;
+  color: $color-btn-copy-text;
   background-color: lighten($color-btn-bg, 5%);
   border-color: lighten($color-btn-border, 15%);
 }
 
 .btn-copy:focus {
-  color: $color-btn-text;
+  color: $color-btn-copy-text;
   background-color: $color-btn-bg;
   border-color: lighten($color-btn-border, 15%);
   box-shadow: none;
@@ -110,13 +110,13 @@ pre {
 .btn-copy::after {
   content: "Copy";
   display: block;
-  color: $color-btn-text;
+  color: $white;
 }
 
 .btn-copy:hover::after {
   content: "Copy";
   display: block;
-  color: $color-btn-text;
+  color: $white;
 }
 
 .btn-copy:focus::after,

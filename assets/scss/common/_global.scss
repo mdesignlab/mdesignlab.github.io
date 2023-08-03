@@ -128,7 +128,7 @@ body {
     .docs-sidebar {
       position: -webkit-sticky;
       position: sticky;
-      top: 4rem;
+      top: 6rem;
       z-index: 1000;
       height: calc(100vh - 4rem);
     }
@@ -175,7 +175,7 @@ body {
   .docs-toc {
     position: -webkit-sticky;
     position: sticky;
-    top: 4rem;
+    top: 6rem;
     height: calc(100vh - 4rem);
     overflow-y: auto;
   }

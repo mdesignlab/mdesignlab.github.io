@@ -10,9 +10,9 @@
 
 <header class="navbar navbar-expand-lg navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-    <a class="navbar-brand" href="#">
-      <img src="https://raw.githubusercontent.com/mdesignlab/mdesignlab.github.io/main/static/m_design_logo.png?token=GHSAT0AAAAAACFF3KAODDO5RIGLL45KTU2WZFVK6AQ">
-     </a>
+    <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+	    <img src="https://github.com/ththJang/ththjang.github.io/blob/master/images/icon.svg?raw=true" width="25%" height="25%" >
+    </a>
     <!-- <a class="navbar-brand order-0" href="{{ .Site.BaseURL | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
        {{ .Site.Params.Title }}
     </a> -->
@@ -82,7 +82,7 @@
         {{- $showFlexSearch := .Site.Params.options.flexSearch }}
         {{- if $showFlexSearch }}
         {{- if and (isset .Site.Params.options "searchsectionsshow") (not (eq .Site.Params.options.searchSectionsShow "ALL")) }}
-        {{- $showFlexSearch = or (eq (len .Site.Params.options.searchSectionsShow) 0) (in .Site.Params.options.searchSectionsShow .Section) (and .IsHome (in .Site.Params.options.searchSectionsShow "HomePage")) }}
+	{{- $showFlexSearch = or (eq (len .Site.Params.options.searchSectionsShow) 0) (in .Site.Params.options.searchSectionsShow .Section) (and .IsHome (in .Site.Params.options.searchSectionsShow "HomePage")) }}
         {{- end }}
         {{- end }}
 
