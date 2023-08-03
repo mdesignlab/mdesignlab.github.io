@@ -39,13 +39,15 @@ Starting from the installation of open-source programs and relevant libraries, i
 [Install]({{< relref "installation" >}}) --- How to install and couple two different methods for DFT-CES.
 
 <h2>
-## How to use for various systems
+How to use for various systems
 </h2>
 
 [Small Molecule in Water]({{< relref "homogeneous" >}}) --- How to construct a homogeneous system for DFT-CES.
 [Heterogeneous Catalyst]({{< relref "heterogeneous" >}}) --- Move onto a heterogeneous system.
 
-## Recent Publications using DFT-CES
+<h2>
+Recent Publications using DFT-CES
+</h2>
 
 [Anion Salt-in-Water](https://pubs.acs.org/doi/full/10.1021/jacsau.3c00061) --- Oh et al., JACS Au 3, 5 (2023).
 <br>

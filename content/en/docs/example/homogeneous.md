@@ -14,7 +14,7 @@ toc: true
 ---
 
 <h1>
-# Small Molecule in Water
+Small Molecule in Water
 </h1>
 
 <div class="callout callout-info">
@@ -67,25 +67,33 @@ In DFT-CES, each region of the QM/MM system is not spatially partitioned. Instea
 {{< /details >}}
 
 <h2>
-## Go Further
+Go Further
 </h2>
-### Generation of Cube Files
+
+<h3>
+Generation of Cube Files
+</h3>
 
 Extract the information for coupling the QM/MM systems. First of all, obtain the cube file of electrostatic potential with 6 float numbers in a row.
 
 The `plot_num = 11` will give you the bare potential and hartree potential as described in [pp.x](https://www.quantum-espresso.org/Doc/INPUT_PP.html) of Quantum ESPRESSO. And, plot another cube with `plot_num = 0` for the valence charge density. These cube files encompassing the QM system store the information for QM/MM simulations in DFT-CES (DFT-CES2 with charge density).
 
-### Preparation for the Pauli Repulsion (DFT-CES2 only)
+<h3>
+Preparation for the Pauli Repulsion (DFT-CES2 only)
+</h3>
 
 A gaussian convoluted density will be used to interpret the Pauli repulsion interaction across the interface between QM and MM subsystems where the non-bond interaction is dominant. We placed commands for the gaussian blurring after checking some requirements during the QM/MM iteration, you need to make sure that the libraries are installed properly to call the convolution function.
 
-### Preparation for the Run
+<h3>
+Preparation for the Run
+</h3>
 
 When you have all systems, and cube files intensionally modified, generally you can run the DFT-CES with the provided executable bash script, but you can do manually.
 
 An executable for the same job but works with only one handy input will be soon released.
+
 <h2>
-## Run
+Run
 </h2>
 
 ```bash
@@ -94,7 +102,7 @@ An executable for the same job but works with only one handy input will be soon 
 ```
 
 <h2>
-## Analysis
+Analysis
 </h2>
 
 <!-- ## Get started

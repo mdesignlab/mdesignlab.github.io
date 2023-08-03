@@ -13,7 +13,9 @@ weight: 120
 toc: true
 ---
 
-## Requirements
+<h2>
+Requirements
+</h2>
 
 - [LAMMPS](https://www.lammps.org/download.html) - ver 2017
 - [Quantum ESPRESSO](https://www.quantum-espresso.org/) - ver 6.3
