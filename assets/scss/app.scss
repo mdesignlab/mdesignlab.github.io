@@ -41,16 +41,16 @@ footer {
   width: 100%;
 }
 
-body.about-us .navbar-brand {
-  display: none; // hide on home page
-}
-
 .menu-icon {
   padding: 0.375rem 0.625rem !important;
 }
 
 .navbar-brand {
   color: $red !important;
+}
+
+.about-us .navbar-brand {
+  display: none; // hide on home page
 }
 
 body .btn-primary {
